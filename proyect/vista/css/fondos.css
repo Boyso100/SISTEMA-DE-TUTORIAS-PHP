@@ -1,0 +1,49 @@
+body{
+	background-color: #F7E7E7;
+}
+
+.imagenprincipal{
+	height: 100px;
+	width: 400px;
+	margin-left:25rem;
+
+}
+
+.imagenpiedepagina{
+
+	background-color: black;
+	padding-top: 10px;
+	
+}
+footer{
+
+margin-bottom: 19px;
+	margin-top: 10rem;
+	padding: 13px;
+	height: 115px;
+	padding-bottom:6px;
+
+}
+
+p{
+	text-align: center;
+	font-size: 10px;
+	color: white;
+}
+
+
+.div1{
+	padding-top: 10px;
+}
+
+.box button{
+  background:#F65205  ;
+  border:0;
+  color:black;
+  padding:10px;
+  font-size:20px;
+  width:330px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+}

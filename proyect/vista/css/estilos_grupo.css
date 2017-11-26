@@ -1,0 +1,19 @@
+body{
+	background-color: #F7E7E7;
+}
+
+form{
+	margin: 20px auto;
+	padding: 20px;
+	width: 70%;
+	position: relative;
+	top: 150px;
+	border: 1px solid orange;
+}
+#btnRegresar{
+	background-image: url(../img/1.ico);
+	height: 50px;
+	width: 50px;
+	border-style: none;
+	border-radius: 100%;
+}

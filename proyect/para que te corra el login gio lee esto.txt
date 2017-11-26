@@ -1,0 +1,3 @@
+cree la base de datos de usuarios aparte para que no me diera conflicto  si  quieres 
+probarlo te deje el scrip que se llama registro que nada mas para el login 
+para cambiar a tus datos  vete a vista y php alli esta la conexion de la base de datos del login.

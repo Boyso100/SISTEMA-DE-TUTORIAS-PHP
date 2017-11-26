@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/estilos_grupo.css" >
+    <!-- Bootstrap CSS -->
+    
+    <title>Grupos</title>
+  </head>
+  <body>
+<button type="button" class="btn btn-warning btn-lg" id="btnRegresar"><--</button>
+  <div class="container">
+    <form>
+      <div>
+  <select class="select-style gender"  name="TipoActivoCuenta"  style="width:515px" required>
+   <option value="" selected>Selecione</option> 
+     <?php
+ include('Consultas.php');
+     
+ $Objeto = new Consulta();
+ $Rset = $Objeto->ObtenerTodosTutores();
+     
+ while($row = odbc_fetch_array($Rset)){
+      ?>
+   <option value="<?php echo $row['nombre']; ?>"><?php echo utf8_encode($row['nombre']); ?></option>
+     <?php
+     }
+     <?
+     </select>
+   </div>
+  <div class="form-group">
+    <label for="Actividad_id">Actividad</label>
+    <input type="text" class="form-control" id="Actividad_id" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-warning">Gestionar Alumno</button>
+</form>
+</div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="css/js/jquery-3.2.1.min.js"></script>
+  <script src="css/js/popper.min.js"></script>
+  <script src="css/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
